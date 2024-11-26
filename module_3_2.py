@@ -1,7 +1,7 @@
 def send_email(message, recipient,*, sender = "university.help@gmail.com"):
     if (recipient.find('@') == -1 or not (recipient.rfind('.com') == (len(recipient) - 4) or
                                       recipient.rfind('.ru') == (len(recipient) - 3)  or
-                                      recipient.find('.net') == (len(recipient) - 4)) or
+                                      recipient.rfind('.net') == (len(recipient) - 4)) or
             sender.find('@') == -1 or not (sender.rfind('.com') == (len(sender) - 4) or
                                         sender.rfind('.ru') == (len(sender) - 3) or
                                         sender.rfind('.net') == (len(sender) - 4))):
