@@ -5,9 +5,7 @@ for i in numbers:
     if i == 1:
         continue
     is_prime = True
-    for j in numbers:
-        if j == 1:
-            continue
+    for j in range(2, i // 2 + 1):
         if i // j > 1 and i % j == 0:
             is_prime = False
             not_primes.append(i)
